@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/HASAN/Desktop/2015%20FALL/Mobil%20Programlama/KDVcal/edu.bil466.KDVCalculator/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">HTK Design Studio</string>
+    <string name="billTotal">Bill Total</string>
+    <string name="custom">Custom</string>
+    <string name="kdv">KDV</string>
+    <string name="total">Total</string>
+    <string name="zero">0.00</string>
+    <!-- From: file:/C:/Users/HASAN/Desktop/2015%20FALL/Mobil%20Programlama/KDVcal/edu.bil466.KDVCalculator/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

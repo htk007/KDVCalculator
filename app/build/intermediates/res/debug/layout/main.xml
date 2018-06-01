@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:padding="5dp"
+    android:stretchColumns="1,2,3" >
+
+    <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/billTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="@string/billTotal"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/billEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:layout_weight="1"
+            android:ems="0"
+            android:inputType="numberDecimal"
+            android:text="@string/zero" >
+
+            <requestFocus />
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/eightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="%8"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/eighteenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="%18"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/twentyFiveTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="%25"
+            android:textColor="#000" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/kdvTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="@string/kdv"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/kdv8EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:ems="0"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:text="@string/zero"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/kdv18EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:ems="0"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:text="@string/zero"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/kdv25EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:ems="0"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:text="@string/zero"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="@string/total"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/total8EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:ems="0"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:text="@string/zero"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/total18EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:ems="0"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:text="@string/zero"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/total25EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:ems="0"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:text="@string/zero"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/customTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/custom"
+            android:textColor="#000" />
+
+        <SeekBar
+            android:id="@+id/customSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:progress="18" />
+
+        <TextView
+            android:id="@+id/customKDVTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:text="%18" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/kdvCustomTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="@string/kdv"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/kdvCustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:ems="0"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:hint="@string/zero"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/totalCustomTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="@string/total"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/totalCustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:ems="0"
+            android:focusable="false"
+            android:gravity="center"
+            android:longClickable="false"
+            android:text="@string/zero"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+</TableLayout>
+<!-- From: file:/C:/Users/HASAN/Desktop/2015%20FALL/Mobil%20Programlama/KDVcal/edu.bil466.KDVCalculator/app/src/main/res/layout/main.xml -->
